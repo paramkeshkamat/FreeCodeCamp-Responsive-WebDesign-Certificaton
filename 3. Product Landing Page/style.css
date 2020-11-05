@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+body {
+  background-color: #eee;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ******HEADER CSS******  */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 88vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+  padding: 1rem;
+}
+#header #header-img {
+  width: 30rem;
+  margin-left: 5%;
+}
+
+/* ******NAVBAR CSS******  */
+#header #nav-bar {
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+#header #nav-bar li {
+  margin: 0 3rem;
+}
+#header #nav-bar li:last-child {
+  margin-right: 0;
+}
+#header .nav-link {
+  color: #000;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+#header .nav-link:hover {
+  border-bottom: 0.1rem solid #000;
+}
+
+/* ******HERO CSS******  */
+#hero {
+  max-width: 60rem;
+  margin: 14rem auto 0 auto;
+  text-align: center;
+}
+#hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#hero #form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#form input[type="email"] {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+}
+#form input[type="submit"],
+.btn {
+  margin: 1rem auto;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.1rem;
+  background-color: orange;
+}
+
+/* ******FEATURES SECTION CSS******  */
+#features {
+  width: 70%;
+  height: 80vh;
+  padding: 10rem;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.sub-features {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 7rem;
+}
+.sub-features .icon {
+  width: 10rem;
+  color: orange;
+  margin-right: 3rem;
+}
+.sub-features .text h2 {
+  font-size: 2.5rem;
+}
+.sub-features .text p {
+  font-size: 1.4rem;
+}
+
+/* ******HOW IT WORKS SECTION CSS******  */
+#how-it-works {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  text-align: center;
+}
+#how-it-works iframe {
+  margin-top: 5rem;
+}
+
+/* ******PRICING SECTION CSS******  */
+#pricing {
+  width: 80%;
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ******CARDS CSS******  */
+.cards {
+  width: 80%;
+  height: 30rem;
+  text-align: center;
+  margin: 2rem auto;
+  border: 0.1rem solid #000;
+  border-radius: 0.3rem;
+}
+.cards h3 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  font-size: 1.6rem;
+}
+.cards p {
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+.cards ul {
+  font-size: 1.4rem;
+}
+.cards .btn {
+  margin: 2rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+/* ******FOOTER CSS******  */
+#footer {
+  width: 80%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: auto;
+  text-align: right;
+}
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#footer ul li {
+  margin-right: 1.5rem;
+}
+#footer ul li a {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bolder;
+}
+#footer p {
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer p span {
+  font-size: 1.8rem;
+}
+
+/* ******RESPONSIVE CODE****** */
+@media (max-width: 768.5px) {
+  #header {
+    flex-direction: column;
+  }
+  #header #header-img {
+    margin: auto;
+  }
+  #nav-bar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #hero {
+    margin-top: 20rem;
+  }
+  #features {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .sub-features {
+    flex-direction: column;
+  }
+  .sub-features .icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  #how-it-works {
+    height: auto;
+    margin-top: 0;
+  }
+  #how-it-works iframe {
+    width: 90%;
+  }
+  #pricing {
+    grid-template-columns: 1fr;
+  }
+  #footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+  #form input[type="email"] {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 35%;
+  }
+}

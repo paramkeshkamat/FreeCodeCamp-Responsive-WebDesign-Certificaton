@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+/* ******MAIN CONTAINER CSS******  */
+#main {
+  background-color: #eee;
+  margin: 20px 10px;
+  border-radius: 0.3rem;
+}
+#main #title {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+#main p {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px auto;
+}
+
+/* ******IMAGE CSS****** */
+#img-div {
+  width: 98%;
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 3px;
+}
+#img-div #image {
+  max-width: 65%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+#img-div #img-caption {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* ******TRIBUTE INFO CSS****** */
+#tribute-info {
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 30px;
+}
+#tribute-info h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+#tribute-info ul {
+  max-width: 100%;
+}
+#tribute-info ul > li {
+  margin: 15px 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* ******QUOTE CSS******  */
+#quote {
+  font-size: 14px;
+  margin-top: 50px;
+}
+#quote > * {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* ******WIKIPEDIA LINK CSS****** */
+#main h3 {
+  padding: 0 20px 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+#main h3 a {
+  color: slateblue;
+}
+
+/* ******RESPONSIVE CODE******  */
+@media (max-width: 768px) {
+  #img-div #image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #main {
+    margin: 0;
+  }
+  #main #title {
+    font-size: 25px;
+  }
+  #tribute-info h2,
+  #main h3 {
+    font-size: 15px;
+  }
+}
